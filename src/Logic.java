@@ -20,7 +20,7 @@ public class Logic { //döper denna klass till Logic
 
             String input = scan.nextLine(); //vad användaren skriver sparas i string variabeln input
             if (input.equalsIgnoreCase("stop")) { //om användaren skriver "stop" avslutas loopen
-                System.out.println("You have chosen to stop, you wrote the words: "); //meddelande till användaren vid 'stop'
+                System.out.println("You have chosen to stop"); //meddelande till användaren vid 'stop'
                 break;
             }
 
@@ -37,6 +37,7 @@ public class Logic { //döper denna klass till Logic
     }
 
     public void printWordsArray() {
+        System.out.print("You wrote the words: ");
         for (String word : words) { //går igenom och skriver ut arrayn ord för ord på samma rad med mellanslag mellan varje ord
             System.out.print(word + " ");
         }
